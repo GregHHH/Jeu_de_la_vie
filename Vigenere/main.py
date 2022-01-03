@@ -30,7 +30,7 @@ word = input("Entrez votre mot-clé à chiffrer: ")
 base = input("Entrez votre base servant au chiffrement: ")
 
 if len(word) == 0:
-    word = "test"
+    word = "testdemotcle"
 if len(base) == 0:
     base = "abc"
 
