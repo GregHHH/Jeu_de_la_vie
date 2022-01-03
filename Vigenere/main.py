@@ -25,14 +25,19 @@ def Encryption(word, base):
     return ''.join([j for j in encrypted_word])
 
 # Le mot à crypter
-word = "testa"
+word = input("Entrez votre mot-clé à chiffrer: ")
 # La base utilisée pour crypter le mot
-base = "abcd"
+base = input("Entrez votre base servant au chiffrement: ")
+
+if len(word) == 0:
+    word = "test"
+if len(base) == 0:
+    base = "abc"
 
 # Pour fonctionner, on a besoin que le nombre de caractères dans le mot à chiffrer soit le même que celui de la base dont on se sert pour decoder
 # Pour le mot "banane" et la clé "abc", il faudrait que la clé devienne "abcabc"
 if len(word) != len(base):
 	base = update_base(word, base)
 
-print(f"{word}, {base}") 
 encrypted = Encryption(word, base) 
+print(f" le mot-clé '{word}' vaut '{encrypted}' une fois chiffré à l'aide de la base '{base}'")
