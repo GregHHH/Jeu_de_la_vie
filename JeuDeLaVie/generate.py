@@ -14,7 +14,3 @@ def generate(lin, col, density):
             if r <= density and cpt <= ((lin * col) * density / 100 ):
                 array[i][j] = 1
     return array
-     # compteur pour ne pas depasser la densité
-
-    
-#-----------------------------------------------------------------------------------------
