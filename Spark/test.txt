@@ -1,0 +1,3 @@
+"words"	71
+"lines"	19
+"chars"	512
